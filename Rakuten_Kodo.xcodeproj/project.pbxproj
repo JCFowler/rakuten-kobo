@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5322A2D25AA867200320EA6 /* LaureateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5322A2B25AA867200320EA6 /* LaureateTableViewCell.swift */; };
+		E5322A2E25AA867200320EA6 /* LaureateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5322A2C25AA867200320EA6 /* LaureateTableViewCell.xib */; };
 		E5EE1E0325AA7547003AB77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E0225AA7547003AB77C /* AppDelegate.swift */; };
 		E5EE1E0525AA7547003AB77C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E0425AA7547003AB77C /* SceneDelegate.swift */; };
 		E5EE1E0725AA7547003AB77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E0625AA7547003AB77C /* ViewController.swift */; };
@@ -15,6 +17,9 @@
 		E5EE1E0F25AA7552003AB77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EE1E0D25AA7552003AB77C /* LaunchScreen.storyboard */; };
 		E5EE1E1A25AA7552003AB77C /* Rakuten_KodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E1925AA7552003AB77C /* Rakuten_KodoTests.swift */; };
 		E5EE1E2525AA7552003AB77C /* Rakuten_KodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E2425AA7552003AB77C /* Rakuten_KodoUITests.swift */; };
+		E5EE1E3625AA7B92003AB77C /* nobel-prize-laureates.json in Resources */ = {isa = PBXBuildFile; fileRef = E5EE1E3525AA7B92003AB77C /* nobel-prize-laureates.json */; };
+		E5EE1E3B25AA7BDC003AB77C /* Laureate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E3A25AA7BDC003AB77C /* Laureate.swift */; };
+		E5EE1E4025AA7C1E003AB77C /* LaureateLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE1E3F25AA7C1E003AB77C /* LaureateLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5322A2B25AA867200320EA6 /* LaureateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureateTableViewCell.swift; sourceTree = "<group>"; };
+		E5322A2C25AA867200320EA6 /* LaureateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaureateTableViewCell.xib; sourceTree = "<group>"; };
 		E5EE1DFF25AA7547003AB77C /* Rakuten_Kodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rakuten_Kodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EE1E0225AA7547003AB77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EE1E0425AA7547003AB77C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		E5EE1E2025AA7552003AB77C /* Rakuten_KodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rakuten_KodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EE1E2425AA7552003AB77C /* Rakuten_KodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rakuten_KodoUITests.swift; sourceTree = "<group>"; };
 		E5EE1E2625AA7552003AB77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5EE1E3525AA7B92003AB77C /* nobel-prize-laureates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "nobel-prize-laureates.json"; sourceTree = "<group>"; };
+		E5EE1E3A25AA7BDC003AB77C /* Laureate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Laureate.swift; sourceTree = "<group>"; };
+		E5EE1E3F25AA7C1E003AB77C /* LaureateLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaureateLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,18 @@
 		E5EE1E0125AA7547003AB77C /* Rakuten_Kodo */ = {
 			isa = PBXGroup;
 			children = (
+				E5EE1E3525AA7B92003AB77C /* nobel-prize-laureates.json */,
+				E5EE1E3A25AA7BDC003AB77C /* Laureate.swift */,
 				E5EE1E0225AA7547003AB77C /* AppDelegate.swift */,
 				E5EE1E0425AA7547003AB77C /* SceneDelegate.swift */,
-				E5EE1E0625AA7547003AB77C /* ViewController.swift */,
 				E5EE1E0825AA7547003AB77C /* Main.storyboard */,
 				E5EE1E0B25AA7552003AB77C /* Assets.xcassets */,
 				E5EE1E0D25AA7552003AB77C /* LaunchScreen.storyboard */,
 				E5EE1E1025AA7552003AB77C /* Info.plist */,
+				E5EE1E3F25AA7C1E003AB77C /* LaureateLoader.swift */,
+				E5EE1E0625AA7547003AB77C /* ViewController.swift */,
+				E5322A2B25AA867200320EA6 /* LaureateTableViewCell.swift */,
+				E5322A2C25AA867200320EA6 /* LaureateTableViewCell.xib */,
 			);
 			path = Rakuten_Kodo;
 			sourceTree = "<group>";
@@ -231,8 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EE1E3625AA7B92003AB77C /* nobel-prize-laureates.json in Resources */,
 				E5EE1E0F25AA7552003AB77C /* LaunchScreen.storyboard in Resources */,
 				E5EE1E0C25AA7552003AB77C /* Assets.xcassets in Resources */,
+				E5322A2E25AA867200320EA6 /* LaureateTableViewCell.xib in Resources */,
 				E5EE1E0A25AA7547003AB77C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5EE1E3B25AA7BDC003AB77C /* Laureate.swift in Sources */,
 				E5EE1E0725AA7547003AB77C /* ViewController.swift in Sources */,
+				E5EE1E4025AA7C1E003AB77C /* LaureateLoader.swift in Sources */,
 				E5EE1E0325AA7547003AB77C /* AppDelegate.swift in Sources */,
+				E5322A2D25AA867200320EA6 /* LaureateTableViewCell.swift in Sources */,
 				E5EE1E0525AA7547003AB77C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
